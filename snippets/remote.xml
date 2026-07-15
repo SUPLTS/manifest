@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+          review="https://review.lineageos.org/"
+          revision="refs/heads/lineage-20.0" />
+
+  <remote name="superior"
+          fetch="https://github.com/SuperiorOS/"
+          revision="refs/heads/thirteen" />
+
+  <remote name="lts"
+          fetch="https://github.com/SUPLTS/"
+          revision="refs/heads/thirteen" />
+
+  <remote name="superior-gitlab"
+          fetch="https://gitlab.com/superioros"
+          revision="refs/heads/thirteen" />
+
+  <remote name="SuperiorOS-Devices"
+           fetch="https://github.com/SuperiorOS-Devices"
+           revision="refs/heads/thirteen" />
+
+</manifest>

@@ -23,19 +23,19 @@ To get started with the building process, you'll need to get familiar with [Git 
 # Sync Source:-
 
 ```bash
-    repo init -u https://github.com/SuperiorOS/manifest.git -b thirteen
+repo init -u https://github.com/SUPLTS/manifest.git -b thirteen
 ```
 
 ```bash
-    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 # Start the build:-
 
 ```bash
-  . build/envsetup.sh
-  lunch superior_<devicecodename>-userdebug
-  m bacon -j$(nproc --all)
+. build/envsetup.sh
+lunch superior_mojito-userdebug
+m bacon -j$(nproc --all)
 ```
 
 ---

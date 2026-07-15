@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build repos -->
+  <project path="build/make" name="android_build" remote="lts" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="lts" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="bionic" name="android_bionic" groups="pdk" remote="lts" />
+  <project path="manifest" name="manifest" remote="lts" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="lts" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="lts" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="lts" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lts" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="lts" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="lts" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="lts" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lts" />
+  <project path="packages/apps/SuperiorLab" name="android_packages_apps_Lts" remote="lts" />
+
+  <!-- Packages modules repos -->
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="lts" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="lts" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="lts" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="lts" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="lts" />
+  <project path="packages/modules/DnsResolver" name="android_packages_modules_DnsResolver" remote="lts" />
+
+  <!-- Packages provider repos -->
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="lts" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="lts" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="lts" />
+
+  <!-- Packages services repos -->
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="lts" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="lts" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/superior" name="android_vendor_lts" remote="lts" />
+  <project path="vendor/support" name="android_vendor_support" remote="lts" />
+</manifest>
