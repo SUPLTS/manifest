@@ -19,6 +19,9 @@
   <project path="bionic" name="android_bionic" groups="pdk" remote="lts" />
   <project path="manifest" name="manifest" remote="lts" />
 
+  <!-- External repos -->
+  <project path="external/bouncycastle" name="android_external_bouncycastle" groups="pdk" remote="lts" />
+
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="lts" />
   <project path="frameworks/base" name="android_frameworks_base" remote="lts" />
